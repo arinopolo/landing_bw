@@ -1,0 +1,403 @@
+/* Reset styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Font faces */
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./fonts/HelveticaNeueMedium.otf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("./fonts/HelveticaNeueBold.otf") format("opentype");
+  font-weight: 700;
+}
+
+/* Typography */
+body,
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  color: #102224;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #102224;
+  margin-bottom: 0;
+}
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+span.medium {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+span.bold {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+h1,
+h2 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.small-text {
+  max-width: 800px;
+}
+.number {
+  font-size: 4rem;
+  color: #31b15c;
+  font-style: italic;
+}
+.product-name {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.footer-text {
+  font-size: 0.8rem;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Utility classes */
+.gradient {
+  background: linear-gradient(to right, #d4e972, #31b15c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  line-height: 1.2;
+  margin: 0.1em 0;
+}
+.blue {
+  color: #102224;
+}
+.max-width-block {
+  max-width: 350px;
+}
+.max-width-block p {
+  font-size: 0.8rem;
+}
+
+/* Navbar */
+.nav-link:hover {
+  opacity: 0.5;
+}
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-nav li {
+  font-weight: 400;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-brand img {
+  max-width: 50px;
+}
+
+/* Buttons */
+.btn-primary-1 {
+  background-color: #31b15c;
+  color: white;
+  border-radius: 50px;
+  height: 3rem;
+}
+.btn-primary-1 a {
+  text-decoration: none;
+  color: white;
+}
+.btn-primary-1:hover {
+  background-color: white;
+  border: 1px solid #31b15c;
+  color: #31b15c;
+}
+.btn-primary-1:hover a {
+  color: #31b15c;
+}
+.btn-reservar {
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  color: white;
+}
+
+/* Forms */
+input {
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  color: black;
+}
+label {
+  color: white;
+}
+#reservationForm {
+  width: 20%;
+}
+.subscribe-form {
+  border-radius: 50px;
+  display: flex;
+}
+.subscribe-form input {
+  border: 2px solid #102224;
+  flex: 2;
+  padding: 1rem;
+  border-right: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  background-color: transparent;
+}
+.subscribe-form button {
+  flex: 1;
+  padding: 1rem;
+  background-color: #102224;
+  color: white;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Sections */
+header {
+  height: 60px;
+}
+.hero-container {
+  height: calc(100vh - 110px);
+}
+.section-2 {
+  background: #102224;
+  padding: 6rem 0;
+}
+.section-3 {
+  height: 100vh;
+  background: #31b15c url("./images/background-3.svg") center/cover no-repeat;
+}
+.form-container {
+  background-color: #31b15c;
+  height: 30rem;
+  background: url("./images/rider.svg") no-repeat right;
+}
+
+/* Background text */
+.background-text {
+  max-width: 100%;
+  font-size: 12rem;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Marquee */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marquee {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+.marquee span {
+  padding-right: 5vw;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+/* Animations */
+.animated-section {
+  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0;
+  transform: translateY(50px);
+}
+.animated-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+  #reservationForm {
+    width: 100%;
+  }
+  .background-text {
+    font-size: 3rem;
+  }
+  .hero-image,
+  .background-text {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+  }
+}
+@media (min-width: 992px) {
+  .features div {
+    min-width: 300px;
+    max-width: 400px;
+  }
+  .section-3 p,
+  .section-3 form {
+    max-width: 50vw;
+  }
+}
