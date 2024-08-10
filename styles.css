@@ -277,11 +277,12 @@ label {
 .subscribe-form {
   border-radius: 50px;
   display: flex;
+  height: 3rem;
 }
 .subscribe-form input {
   border: 2px solid #102224;
   flex: 2;
-  padding: 1rem;
+  padding-left: 1rem;
   border-right: none;
   border-radius: 50px 0 0 50px;
   outline: none;
@@ -291,7 +292,7 @@ label {
 }
 .subscribe-form button {
   flex: 1;
-  padding: 1rem;
+
   background-color: #102224;
   color: white;
   border: none;
