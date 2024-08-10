@@ -235,6 +235,9 @@ h3 {
   max-width: 50px;
 }
 
+.rights {
+  font-size: 12px;
+}
 /* Buttons */
 .btn-primary-1 {
   background-color: #31b15c;
