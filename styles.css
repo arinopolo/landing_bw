@@ -391,6 +391,9 @@ header {
   }
 }
 @media (min-width: 992px) {
+  .hero-container {
+    height: calc(100vh - 110px);
+  }
   .features div {
     min-width: 300px;
     max-width: 400px;
