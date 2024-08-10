@@ -305,9 +305,7 @@ label {
 header {
   height: 60px;
 }
-.hero-container {
-  height: calc(100vh - 110px);
-}
+
 .section-2 {
   background: #102224;
   padding: 6rem 0;
