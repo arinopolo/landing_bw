@@ -393,8 +393,21 @@ header {
     transform: translate(-50%, -50%);
     z-index: 5;
   }
+
+  .photo-lg {
+    display: none;
+  }
+  .photo-sm {
+    display: block;
+  }
 }
 @media (min-width: 992px) {
+  .photo-lg {
+    display: block;
+  }
+  .photo-sm {
+    display: none;
+  }
   .hero-container {
     height: calc(100vh - 110px);
   }
