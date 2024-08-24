@@ -240,11 +240,13 @@ h3 {
 }
 /* Buttons */
 .btn-primary-1 {
-  background-color: #31b15c;
+  background: #31b15c;
   padding: 0 2rem;
   color: white;
   border-radius: 50px;
-  height: 3rem;
+  height: 3.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 .btn-primary-1 a {
   text-decoration: none;
