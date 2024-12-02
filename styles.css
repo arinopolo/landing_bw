@@ -135,12 +135,49 @@ table {
   src: url("./fonts/HelveticaNeueBold.otf") format("opentype");
   font-weight: 700;
 }
-
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Bold.ttf") format("opentype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Medium.ttf") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("opentype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Light.ttf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-MediumItalic.ttf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-Light-BETA.otf") format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter-SemiBold.otf") format("opentype");
+  font-weight: 600;
+}
 /* Typography */
 body,
 .nav-link {
-  font-family: "Montserrat", sans-serif;
-  color: #102224;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
 }
 h1,
 h2,
@@ -159,22 +196,30 @@ p {
   margin-bottom: 0;
 }
 span.medium {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Poppins ", sans-serif;
   font-weight: 500;
 }
-span.bold {
-  font-family: "Helvetica Neue", sans-serif;
+.bold {
   font-weight: 700;
 }
-h1,
+.semi-bold {
+  font-weight: 600;
+}
+span.medium {
+  font-weight: 500;
+}
+
 h2 {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 38px;
+  font-family: "Poppins ", sans-serif;
+  font-size: 42px;
   line-height: 1.2;
+  letter-spacing: -0.05em;
 }
 
 h1 {
   font-weight: 600;
+  font-size: 42px;
+  letter-spacing: -5%;
 }
 
 h3 {
@@ -200,7 +245,9 @@ h3 {
   cursor: pointer;
   text-decoration: none;
 }
-
+.main {
+  background: #102224;
+}
 /* Utility classes */
 .gradient {
   background: linear-gradient(to right, #d4e972, #31b15c);
@@ -209,11 +256,13 @@ h3 {
   background-clip: text;
   color: transparent;
   display: inline-block;
-  line-height: 1.2;
-  margin: 0.1em 0;
 }
 .blue {
   color: #102224;
+}
+
+.green {
+  color: #31b15c;
 }
 .max-width-block {
   max-width: 350px;
@@ -236,7 +285,7 @@ h3 {
   border: none;
 }
 .navbar-brand img {
-  max-width: 120px;
+  max-width: 100px;
 }
 
 .rights {
@@ -245,12 +294,14 @@ h3 {
 /* Buttons */
 .btn-primary-1 {
   background: #31b15c;
-  padding: 0 2rem;
+  padding: 15px 20px;
   color: white;
   border-radius: 50px;
   height: 3.2rem;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 14px;
+  font-family: "Poppins";
+  font-weight: 700;
 }
 .btn-primary-1 a {
   text-decoration: none;
@@ -265,7 +316,7 @@ h3 {
   color: #31b15c;
 }
 .btn-reservar {
-  background-color: black;
+  background-color: #102224;
   border: none;
   border-radius: 50px;
   color: white;
@@ -276,7 +327,10 @@ input {
   background-color: white;
   border: none;
   border-radius: 50px;
-  color: black;
+  color: #102224;
+}
+input::placeholder {
+  font-weight: 300;
 }
 label {
   color: white;
@@ -290,20 +344,20 @@ label {
   height: 3rem;
 }
 .subscribe-form input {
-  border: 2px solid #102224;
+  border: 2px solid #31b15c;
   flex: 2;
   padding-left: 1rem;
   border-right: none;
   border-radius: 50px 0 0 50px;
   outline: none;
   font-size: 16px;
-  color: white;
+  color: #102224;
   background-color: transparent;
 }
 .subscribe-form button {
   flex: 1;
 
-  background-color: #102224;
+  background-color: #31b15c;
   color: white;
   border: none;
   border-radius: 0 50px 50px 0;
@@ -315,16 +369,46 @@ label {
 /* Sections */
 header {
   height: 60px;
+  background-color: #102224;
 }
 
 .section-2 {
   background: #102224;
-  padding: 6rem 0;
+  padding: 6rem 24px;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
+
 .section-3 {
-  height: 100vh;
-  background: #31b15c url("./images/background-3.svg") center/cover no-repeat;
+  height: 80vh;
+  background: #31b15c;
+  border-radius: 20px;
+  padding: 6rem 24px;
+  position: relative;
+  overflow: hidden;
 }
+.section-4 {
+  height: 80vh;
+  background: #102224;
+  padding: 6rem 24px;
+  position: relative;
+  overflow: hidden;
+}
+.section-5 {
+  height: 90vh;
+  background: white;
+  padding: 6rem 24px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+p {
+  font-family: "Inter", sans-serif;
+}
+
 .form-container {
   background-color: #31b15c;
   height: 30rem;
@@ -356,15 +440,28 @@ header {
 .marquee {
   display: flex;
   animation: marquee 25s linear infinite;
+  color: #102224;
 }
 .marquee span {
   padding-right: 5vw;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--white);
   white-space: nowrap;
   font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 500x;
 }
 
+.components-white {
+  position: absolute;
+  bottom: 10%;
+  left: -20%;
+}
+.cyclists-white {
+  position: absolute;
+  bottom: 10%;
+  left: -5%;
+}
 /* Animations */
 .animated-section {
   transition: opacity 0.5s, transform 0.5s;
@@ -384,8 +481,23 @@ header {
   }
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.light {
+  font-weight: 300;
+}
 /* Media queries */
 @media (max-width: 991px) {
+  .bike-white {
+    position: absolute;
+    bottom: 0;
+    right: -20%;
+  }
+  .w-50 {
+    width: 100% !important;
+  }
   #reservationForm {
     width: 100%;
   }
@@ -405,9 +517,31 @@ header {
   }
   .photo-sm {
     display: block;
+    transform: scaleX(-1);
   }
 }
 @media (min-width: 992px) {
+  .w-50 {
+    width: 50%;
+  }
+  .bike-white {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+  }
+  .components-white {
+    left: 5%;
+    bottom: 0;
+  }
+  .cyclists-white {
+    left: 60%;
+    bottom: 0;
+  }
+  .section-2,
+  .section-3,
+  .section-4 {
+    padding: 10rem;
+  }
   .photo-lg {
     display: block;
   }
@@ -417,10 +551,7 @@ header {
   .hero-container {
     height: calc(100vh - 110px);
   }
-  .features div {
-    min-width: 300px;
-    max-width: 400px;
-  }
+
   .section-3 p,
   .section-3 form {
     max-width: 50vw;
