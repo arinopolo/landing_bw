@@ -552,8 +552,11 @@ p {
     height: calc(100vh - 110px);
   }
 
-  .section-3 p,
-  .section-3 form {
-    max-width: 50vw;
+  .section-2,
+  .section-4 {
+    height: 70vh;
+  }
+  .section-3 {
+    height: 60vh;
   }
 }
