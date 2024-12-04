@@ -541,9 +541,12 @@ p {
     left: -2%;
     bottom: 0;
   }
-  .cyclists-big {
-    left: 60%;
-    bottom: 0;
+
+  .cyclist-big {
+    left: 85%;
+  }
+  .cyclist-small {
+    left: 52%;
   }
   .section-2,
   .section-3,
