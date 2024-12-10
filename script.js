@@ -28,8 +28,8 @@ gsap.to(bikeImage, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: bikeImage,
-    start: "bottom 0%",
-    end: "top 0%",
+    start: "top bottom ",
+    end: "bottom top ",
     scrub: 0.5,
   },
 });
@@ -42,8 +42,8 @@ gsap.to(componentsImage, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: componentsImage,
-    start: "bottom 0%",
-    end: "top 0%",
+    start: "top bottom ",
+    end: "bottom top ",
     scrub: 0.5,
   },
 });
@@ -56,8 +56,8 @@ gsap.to(cyclistBig, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: cyclistBig,
-    start: "bottom 0%",
-    end: "top 0%",
+    start: "top bottom ",
+    end: "bottom top ",
     scrub: 0.5,
   },
 });
@@ -67,8 +67,8 @@ gsap.to(cyclistSmall, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: cyclistSmall,
-    start: "bottom 0%",
-    end: "top 0%",
+    start: "top bottom ",
+    end: "bottom top ",
     scrub: 0.5,
   },
 });
