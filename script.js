@@ -25,12 +25,12 @@ const bikeImage = document.querySelector(".bike-white");
 
 gsap.to(bikeImage, {
   x: "-150px",
-  ease: "power1.inOut",
+  ease: "power3.inOut",
   scrollTrigger: {
     trigger: bikeImage,
     start: "top 80%",
     end: "top 20%",
-    scrub: true,
+    scrub: 0.5,
   },
 });
 
@@ -39,12 +39,12 @@ const componentsImage = document.querySelector(".components-white");
 gsap.to(componentsImage, {
   x: "150px",
   rotation: 70,
-  ease: "power1.inOut",
+  ease: "power3.inOut",
   scrollTrigger: {
     trigger: componentsImage,
     start: "top 80%",
     end: "top 20%",
-    scrub: true,
+    scrub: 0.5,
   },
 });
 
@@ -52,23 +52,23 @@ const cyclistBig = document.querySelector(".cyclist-big");
 const cyclistSmall = document.querySelector(".cyclist-small");
 
 gsap.to(cyclistBig, {
-  x: "-200px",
-  ease: "power1.inOut",
+  x: "-150px",
+  ease: "power3.inOut",
   scrollTrigger: {
     trigger: cyclistBig,
     start: "top 80%",
     end: "top 20%",
-    scrub: true,
+    scrub: 0.5,
   },
 });
 
 gsap.to(cyclistSmall, {
-  x: "200px",
-  ease: "power1.inOut",
+  x: "150px",
+  ease: "power3.inOut",
   scrollTrigger: {
     trigger: cyclistSmall,
     start: "top 80%",
     end: "top 20%",
-    scrub: true,
+    scrub: 0.5,
   },
 });
