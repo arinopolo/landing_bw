@@ -28,7 +28,7 @@ gsap.to(bikeImage, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: bikeImage,
-    start: "top 80%",
+    start: "top 90%",
     end: "top 20%",
     scrub: 0.5,
   },
@@ -42,7 +42,7 @@ gsap.to(componentsImage, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: componentsImage,
-    start: "top 80%",
+    start: "top 90%",
     end: "top 20%",
     scrub: 0.5,
   },
@@ -56,7 +56,7 @@ gsap.to(cyclistBig, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: cyclistBig,
-    start: "top 80%",
+    start: "top 90%",
     end: "top 20%",
     scrub: 0.5,
   },
@@ -67,7 +67,7 @@ gsap.to(cyclistSmall, {
   ease: "power3.inOut",
   scrollTrigger: {
     trigger: cyclistSmall,
-    start: "top 80%",
+    start: "top 90%",
     end: "top 20%",
     scrub: 0.5,
   },
