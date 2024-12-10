@@ -29,7 +29,7 @@ gsap.to(bikeImage, {
   scrollTrigger: {
     trigger: bikeImage,
     start: "top 90%",
-    end: "top 20%",
+    end: "top 0%",
     scrub: 0.5,
   },
 });
@@ -43,7 +43,7 @@ gsap.to(componentsImage, {
   scrollTrigger: {
     trigger: componentsImage,
     start: "top 90%",
-    end: "top 20%",
+    end: "top 0%",
     scrub: 0.5,
   },
 });
@@ -57,7 +57,7 @@ gsap.to(cyclistBig, {
   scrollTrigger: {
     trigger: cyclistBig,
     start: "top 90%",
-    end: "top 20%",
+    end: "top 0%",
     scrub: 0.5,
   },
 });
@@ -68,7 +68,7 @@ gsap.to(cyclistSmall, {
   scrollTrigger: {
     trigger: cyclistSmall,
     start: "top 90%",
-    end: "top 20%",
+    end: "top 0%",
     scrub: 0.5,
   },
 });
