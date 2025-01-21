@@ -294,14 +294,12 @@ h3 {
 /* Buttons */
 .btn-primary-1 {
   background: #31b15c;
-  padding: 15px 20px;
+  padding: 16px 20px;
   color: white;
   border-radius: 50px;
-  height: 3.2rem;
-  font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Poppins";
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
 }
 .btn-primary-1 a {
