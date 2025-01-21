@@ -176,8 +176,8 @@ body,
 .nav-link {
   font-family: "Poppins", sans-serif;
   color: #fff;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 14px;
 }
 h1,
 h2,
@@ -218,7 +218,7 @@ h2 {
 
 h1 {
   font-weight: 600;
-  font-size: 42px;
+  font-size: 62px;
   letter-spacing: -5%;
 }
 
@@ -249,14 +249,19 @@ h3 {
   background: #102224;
 }
 /* Utility classes */
+
 .gradient {
   background: linear-gradient(to right, #d4e972, #31b15c);
+
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; /* Aplica el gradiente solo al texto */
   background-clip: text;
-  color: transparent;
   display: inline-block;
+  transition: background-position 0.5s ease; /* Transición suave solo para la posición del fondo */
+  background-size: 200%; /* Ajustar para animación fluida */
+  background-position: 0% 100%; /* Posición inicial */
 }
+
 .blue {
   color: #102224;
 }
@@ -272,6 +277,10 @@ h3 {
 }
 
 /* Navbar */
+
+.navbar {
+  padding: 0 3rem;
+}
 .nav-link:hover {
   opacity: 0.5;
 }
@@ -296,7 +305,7 @@ h3 {
   background: #31b15c;
   padding: 16px 20px;
   color: white;
-  border-radius: 50px;
+  border-radius: 12px;
   font-size: 16px;
   font-family: "Poppins";
   font-weight: 600;
@@ -340,7 +349,7 @@ label {
   width: 20%;
 }
 .subscribe-form {
-  border-radius: 50px;
+  border-radius: 12px;
   display: flex;
   height: 3rem;
 }
@@ -349,7 +358,7 @@ label {
   flex: 2;
   padding-left: 1rem;
   border-right: none;
-  border-radius: 50px 0 0 50px;
+  border-radius: 12px 0 0 12px;
   outline: none;
   font-size: 16px;
   color: #102224;
@@ -360,7 +369,7 @@ label {
   background-color: #31b15c;
   color: white;
   border: none;
-  border-radius: 0 50px 50px 0;
+  border-radius: 0 12px 12px 0;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -566,4 +575,45 @@ p {
   .section-4 {
     height: 70vh;
   }
+}
+
+#cursor {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #d4e972;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.app-text {
+  color: #102224; /* Color inicial del texto */
+  -webkit-text-stroke: 0px; /* Sin contorno inicialmente */
+  transition: color 0.4s ease, -webkit-text-stroke 0.4s ease; /* Transición suave */
+}
+
+.app-text:hover {
+  color: transparent; /* Hacer el texto transparente para mostrar solo el contorno */
+  -webkit-text-stroke: 2px #102224; /* Agregar el contorno en hover */
+}
+
+.green-text {
+  color: #31b15c; /* Color inicial del texto */
+  -webkit-text-stroke: 0px; /* Sin contorno inicialmente */
+  transition: color 0.4s ease, -webkit-text-stroke 0.4s ease; /* Transición suave */
+}
+
+.green-text:hover {
+  color: transparent; /* Hacer el texto transparente para mostrar solo el contorno */
+  -webkit-text-stroke: 2px #31b15c; /* Agregar el contorno en hover */
+}
+
+.gradient:hover {
+  background-position: 100% 0%; /* Cambiar posición para invertir el gradiente */
+}
+
+.subscribe-form button:hover {
+  background-color: white;
+  color: #31b15c;
+  border: 2px solid #31b15c;
 }

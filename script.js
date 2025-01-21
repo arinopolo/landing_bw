@@ -72,3 +72,13 @@ gsap.to(cyclistSmall, {
     scrub: 0.5,
   },
 });
+
+const cursor = document.getElementById("cursor");
+
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX - cursor.offsetWidth / 2.5;
+  const y = e.clientY - cursor.offsetHeight / 3;
+
+  cursor.style.left = `${x}px`;
+  cursor.style.top = `${y}px`;
+});
