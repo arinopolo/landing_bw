@@ -505,6 +505,10 @@ p {
 }
 /* Media queries */
 @media (max-width: 991px) {
+
+  h1{
+    font-size: 48px;
+  }
   .bike-white {
     position: absolute;
     bottom: 0;
